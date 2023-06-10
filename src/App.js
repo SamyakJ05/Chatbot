@@ -9,7 +9,7 @@ function App() {
   const port = process.env.PORT || 3001;
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:'+port, {
+    fetch('https://opsbot-api.onrender.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
